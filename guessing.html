@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Try to guess</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Try to guess</h1>
+
+		<script>
+			// read user's number (popup window)
+			var guess = prompt('Enter guess number');
+			// create a random number
+			var r = Math.floor(Math.random() * 4 + 1);
+			// compare the numbers
+			if (guess == r)
+			// show results (popup window)
+			{
+				alert('Good Work' + '\n' + 'Your number: ' + guess + '\n' + 'Guess number: ' + r);
+			}
+			else{
+				alert('Sorry' + '\n' + 'Your number: ' + guess + '\n' + 'Guess number: ' + r);
+			}
+		</script>
+	</body>
+</html>

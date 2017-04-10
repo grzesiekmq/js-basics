@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Array checker</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h1>Array checker</h1>
+		<p>Display results on the console</p>
+
+		<script>
+			var tab = [];
+			var i;
+
+			// assign random integers to array elements
+			for (i = 0; i < 5; i++) {
+				// ...
+				r = Math.floor(Math.random() * 4 + 1);
+				tab.push(r);
+			
+
+			// show array elements
+			}
+			console.log('Array elements: ' + tab);
+			
+			// ...
+			
+			// check whether the array is ordered
+			// ...
+			if (tab.toString() === tab.sort(function(a, b) {
+				return a - b;
+			}).toString() ) {
+			// display message: Array is ordered / unordered
+			// ...
+				console.log('Array is ordered');
+			}
+			else {
+				console.log('Array is unordered');
+			}
+		</script>
+	</body>
+</html>
